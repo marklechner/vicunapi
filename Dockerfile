@@ -1,9 +1,6 @@
 # Use the official Python image as the base image
 FROM python:3.11-bullseye
 
-ADD https://huggingface.co/vicuna/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-q5_1.bin /var/tmp/
-RUN chmod +x /var/tmp/ggml-vic13b-q5_1.bin 
-
 RUN pip install --upgrade pip
 
 # Set the working directory inside the container
